@@ -1,0 +1,9 @@
+<?php
+require_once("functions.php");
+$titre=$_GET["titre"];
+$type=$_GET["type"];
+$ens=$_GET["enseignant"];
+$etud=$_GET["etudiant"];
+addPfe($titre,$type,$ens,$etud);
+header("location:index.php");
+?>
